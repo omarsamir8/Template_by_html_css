@@ -1,0 +1,412 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+}
+.header {
+  width: 100%;
+  height: 600px;
+  background-image: url("../imgs/4597543-snow-winter-landscape-mountains-nature-photography-clouds-sky-cold-stein-glacier-switzerland-snowy-mountains-australia.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 60px;
+  width: 96.45%;
+  top: 0;
+  position: fixed;
+  z-index: 10s;
+  background-color: rgb(156, 156, 156, 0.4);
+}
+.nav-bar .nav-bar-logo i {
+  font-size: 50px;
+  color: black;
+}
+.nav-bar .nav-bar-links {
+  position: relative;
+}
+.nav-bar .nav-bar-links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.nav-bar .nav-bar-links .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+.nav-bar .nav-bar-links .icon span {
+  background-color: black;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.nav-bar .nav-bar-links .icon span:first-child {
+  width: 100%;
+}
+.nav-bar .nav-bar-links .icon span:nth-child(2) {
+  width: 60%;
+  transition-duration: 0.3s;
+}
+.nav-bar .nav-bar-links .icon span:nth-child(3) {
+  width: 100%;
+}
+.header .nav-bar .nav-bar-links ul {
+  list-style: none;
+  padding: 0;
+  margin-left: -170px;
+  background-color: #f6f6f6;
+  position: absolute;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+}
+.header .nav-bar .nav-bar-links:hover ul {
+  display: block;
+}
+.header .nav-bar .nav-bar-links ul::before {
+  content: "";
+  position: absolute;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  margin-left: 180px;
+  top: -20px;
+  right: 0;
+}
+.header .nav-bar .nav-bar-links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.header .nav-bar .nav-bar-links ul li a:hover {
+  padding-left: 25px;
+}
+.header .nav-bar .nav-bar-links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+.header .header-content {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+  margin-top: 60px;
+}
+.header .header-content h2 {
+  font-size: 50px;
+  color: rgb(63, 252, 189);
+  padding-top: 200px;
+}
+.header .header-content .animation {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.header .header-content .animation .one {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-left: 10px;
+  background-color: rgb(63, 252, 189);
+  opacity: 1;
+  animation-name: up-to-down;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+}
+.header .header-content .animation div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.header .header-content .animation div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+@keyframes up-to-down {
+  100% {
+    opacity: 0.7;
+    transform: translateY(10px);
+    -webkit-transform: translateY(10px);
+    -moz-transform: translateY(10px);
+    -ms-transform: translateY(10px);
+    -o-transform: translateY(10px);
+  }
+}
+/* section one */
+.section-one {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
+  text-align: center;
+  background-color: #f6f6f6;
+}
+.section-one .content-one {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  position: relative;
+}
+.section-one .content-one::after {
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  background-color: #333;
+  position: absolute;
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+.section-one .content-one:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+}
+
+.section-one .content-one i {
+  color: #10cab7;
+}
+.section-one .content-one h2 {
+  font-size: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/* sevice */
+.service {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 600px;
+}
+.service .service-titel h2 {
+  font-size: 35px;
+}
+.service .service-titel h3 {
+  color: gray;
+}
+.service .service-continer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.service .service-continer .service-photo {
+  position: relative;
+  width: 600px;
+  height: 400px;
+}
+.service .service-continer .service-photo img {
+  width: 300px;
+  height: 350px;
+  padding-top: 50px;
+  margin-left: 50px;
+  position: absolute;
+  top: 0;
+  right: 150px;
+}
+.service .service-continer .service-photo .color {
+  width: 80px;
+  height: 400px;
+  background-color: midnightblue;
+  position: absolute;
+  right: 0;
+  margin-bottom: 50px;
+  margin-right: 100px;
+  padding-right: 100px;
+}
+.service .content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.service .content .content-one {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  padding-top: 50px;
+}
+.service .content .content-one i {
+  padding-right: 20px;
+  padding-top: 5px;
+  color: #10cab7;
+}
+.service .content .content-one .titel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.service .content .content-one .titel p {
+  color: gray;
+}
+/* portfolio */
+.portfolio {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f6f6;
+  height: 600px;
+}
+.portfolio .portfolio-titel h2 {
+  font-size: 35px;
+}
+.portfolio .portfolio-titel h3 {
+  color: gray;
+}
+.portfolio .portfolio-content {
+  display: flex;
+  justify-content: space-around;
+}
+.portfolio .portfolio-content .content-one {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+  height: 500px;
+}
+.portfolio .portfolio-content .content-one p {
+  color: gray;
+}
+.portfolio .portfolio-content .content-one img {
+  height: 266.66px;
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+}
+
+.about .about-titel h2 {
+  font-size: 35px;
+}
+.about .about-titel h3 {
+  color: gray;
+}
+.about .about-content {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+.about .about-content .img {
+  position: relative;
+  width: 50%;
+}
+.about .about-content .img img {
+  position: absolute;
+  height: 250px;
+  width: 300px;
+  left: 50px;
+  top: 25px;
+  z-index: 2;
+}
+.about .about-content .img .color1 {
+  width: 100px;
+  height: 300px;
+  background-color: aqua;
+  position: absolute;
+  right: 135px;
+}
+.about .about-content .img .color2 {
+  width: 100px;
+  height: 300px;
+  position: absolute;
+  background-color: rgb(184, 185, 185);
+  left: 0;
+}
+.about .about-content .paraghraph {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+.about .about-content .paraghraph p {
+  width: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.about .about-content .paraghraph .line {
+  width: 400px;
+  height: 4px;
+  background-color: aqua;
+}
+/* contact */
+.contact {
+  height: 300px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #f6f6f6;
+}
+.contact .contact-titel h2 {
+  font-size: 35px;
+}
+.contact .contact-titel h3 {
+  color: gray;
+  font-size: 25px;
+}
+.contact p {
+  color: #2c4755;
+  font-size: 50px;
+}
+.contact a {
+  text-decoration: none;
+  font-size: 50px;
+  color: #10cab7;
+}
+.contact .icons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+.contact .icons h4 {
+  margin-top: 15px;
+}
+.contact .icons a i {
+  font-size: 30px;
+  margin-left: 10px;
+  color: #333;
+}
+/* footer */
+.footer {
+  text-align: center;
+  height: 50px;
+  padding-top: 10px;
+  background-color: #333;
+  color: whites;
+}
+.footer span {
+  color: aqua;
+}
+/* ~~~~~~~~~~~~~~~~~media query ~~~~~~~~~~~~~~~~~*/
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
